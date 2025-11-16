@@ -258,7 +258,7 @@
      </div>
      <h1 id="main-title">IMED Hub</h1>
     </div>
-    <p class="subtitle-ka" id="subtitle-ka">თქვენი კლინიკური ხელსაწყოების სატევი პორტალი</p>
+    <p class="subtitle-ka" id="subtitle-ka">კლინიკური ხელსაწყოების პორტალი</p>
     <p class="subtitle-en" id="subtitle-en">Quick access to clinic tools &amp; microsites</p>
    </header><!-- Links Section -->
    <main class="links-section" id="links">
@@ -294,7 +294,7 @@
     </div>
    </main><!-- Footer -->
    <footer class="footer">
-    <p id="footer-text">© 2024 IMED Hub. Created for clinic efficiency.</p>
+    <p id="footer-text">© 2025 IMED Hub🩺. Created for clinic efficiency.</p>
    </footer>
   </div>
   <script>
