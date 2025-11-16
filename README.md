@@ -301,7 +301,7 @@
         // Configuration object
         const defaultConfig = {
             main_title: "IMED Hub",
-            subtitle_ka: "თქვენი კლინიკური ხელსაწყოების სატევი პორტალი",
+            subtitle_ka: "კლინიკური ხელსაწყოების პორტალი",
             subtitle_en: "Quick access to clinic tools & microsites",
             card1_title: "კლინიკის ექიმების ნომრები",
             card1_subtitle: "Clinic phone list",
