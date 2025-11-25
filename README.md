@@ -130,6 +130,7 @@
         .card:nth-child(3) { animation-delay: 0.3s; }
         .card:nth-child(4) { animation-delay: 0.4s; }
         .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
         .card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
@@ -260,7 +261,7 @@
      <h1 id="main-title">IMED Hub</h1>
     </div>
     <p class="subtitle-ka" id="subtitle-ka">კლინიკური ხელსაწყოების პორტალი</p>
-    <p class="subtitle-en" id="subtitle-en">Quick access to clinic tools &amp; microsites</p>
+    <p class="subtitle-en" id="subtitle-en">Quick access to clinic tools & microsites</p>
    </header><!-- Links Section -->
    <main class="links-section" id="links">
     <h2 class="section-title">Clinic Tools &amp; Sites</h2>
@@ -291,12 +292,18 @@
       </svg>
       <h3 class="card-title" id="card4-title">მორიგეობის კალენდარი</h3>
       <p class="card-subtitle" id="card4-subtitle">Duty schedule calendar</p><button class="card-button" onclick="openLink('https://imed458.github.io/calendar.github.io/')">Open</button>
-     </div><!-- New Card 5: Inpatient -->
+     </div><!-- Card 5: Inpatient -->
      <div class="card">
       <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"></path><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4H9.5a2 2 0 0 0 0 4h11a2 2 0 0 1 2 2v9"></path></svg>
       <h3 class="card-title" id="card5-title">საწოლების მართვის სისტემა</h3>
       <p class="card-subtitle" id="card5-subtitle">Bed and Patient Management in Inpatient Ward</p>
       <button class="card-button" onclick="openLink('https://imed458.github.io/inpatienter.github.io/')">Open</button>
+     </div><!-- New Card 6: Stationary Prescription -->
+     <div class="card">
+      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9v-7.14a2 2 0 0 0-5-1.73M10 20H3v-7.14a2 2 0 0 1 5 1.73M15 4h6v6M9 4H3v6"></path></svg>
+      <h3 class="card-title" id="card6-title">სტაციონარული დანიშნულება</h3>
+      <p class="card-subtitle" id="card6-subtitle">Stationary Prescription Tool</p>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/priscription.github.io/')">Open</button>
      </div>
     </div>
    </main><!-- Footer -->
@@ -320,6 +327,8 @@
             card4_subtitle: "Duty schedule calendar",
             card5_title: "საწოლების მართვის სისტემა",
             card5_subtitle: "Bed and Patient Management in Inpatient Ward",
+            card6_title: "სტაციონარული დანიშნულება",
+            card6_subtitle: "Stationary Prescription Tool",
             footer_text: "© 2025 IMED Hub. Created for clinic efficiency.",
             background_color: "#f8fafc",
             primary_color: "#0ea5e9",
@@ -342,7 +351,7 @@
             document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
             document.getElementById('subtitle-ka').textContent = config.subtitle_ka || defaultConfig.subtitle_ka;
             document.getElementById('subtitle-en').textContent = config.subtitle_en || defaultConfig.subtitle_en;
-          
+         
             document.getElementById('card1-title').textContent = config.card1_title || defaultConfig.card1_title;
             document.getElementById('card1-subtitle').textContent = config.card1_subtitle || defaultConfig.card1_subtitle;
             document.getElementById('card2-title').textContent = config.card2_title || defaultConfig.card2_title;
@@ -353,7 +362,9 @@
             document.getElementById('card4-subtitle').textContent = config.card4_subtitle || defaultConfig.card4_subtitle;
             document.getElementById('card5-title').textContent = config.card5_title || defaultConfig.card5_title;
             document.getElementById('card5-subtitle').textContent = config.card5_subtitle || defaultConfig.card5_subtitle;
-          
+            document.getElementById('card6-title').textContent = config.card6_title || defaultConfig.card6_title;
+            document.getElementById('card6-subtitle').textContent = config.card6_subtitle || defaultConfig.card6_subtitle;
+         
             document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
             // Update colors
             const backgroundColor = config.background_color || defaultConfig.background_color;
@@ -386,18 +397,18 @@
             });
             // Update fonts
             document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
-          
+         
             // Update font sizes proportionally
             document.querySelector('.hero h1').style.fontSize = `${baseSize * 2.2}px`;
             document.querySelector('.hero .subtitle-ka').style.fontSize = `${baseSize * 1.25}px`;
             document.querySelector('.hero .subtitle-en').style.fontSize = `${baseSize * 1.125}px`;
             document.querySelector('.section-title').style.fontSize = `${baseSize * 2}px`;
-          
+         
             const cardTitles = document.querySelectorAll('.card-title');
             cardTitles.forEach(title => {
                 title.style.fontSize = `${baseSize * 1.25}px`;
             });
-          
+         
             const cardSubtitles = document.querySelectorAll('.card-subtitle');
             cardSubtitles.forEach(subtitle => {
                 subtitle.style.fontSize = `${baseSize * 0.95}px`;
@@ -488,6 +499,8 @@
                 ["card4_subtitle", config.card4_subtitle || defaultConfig.card4_subtitle],
                 ["card5_title", config.card5_title || defaultConfig.card5_title],
                 ["card5_subtitle", config.card5_subtitle || defaultConfig.card5_subtitle],
+                ["card6_title", config.card6_title || defaultConfig.card6_title],
+                ["card6_subtitle", config.card6_subtitle || defaultConfig.card6_subtitle],
                 ["footer_text", config.footer_text || defaultConfig.footer_text]
             ]);
         }
