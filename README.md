@@ -3,6 +3,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMED Hub - Clinic Tools Portal</title>
+
+  <!-- FAVICON: use existing logo file in the same folder -->
+  <link rel="icon" type="image/png" href="imed-hub-logo.png">
+  <link rel="shortcut icon" type="image/png" href="imed-hub-logo.png">
+  <!-- სურვილის მიხედვით შეგიძლია დაამატო ეს тоже:
+  <link rel="apple-touch-icon" href="imed-hub-logo.png">
+  -->
+
   <script src="/_sdk/element_sdk.js"></script>
   <style>
         body {
@@ -267,7 +275,7 @@
     <h2 class="section-title">Clinic Tools &amp; Sites</h2>
     <div class="cards-grid"><!-- Card 1: Phone Numbers -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
       </svg>
       <h3 class="card-title" id="card1-title">კლინიკის ექიმების ნომრები</h3>
       <p class="card-subtitle" id="card1-subtitle">Clinic phone list</p>
@@ -276,31 +284,31 @@
       </div><button class="card-button" onclick="openLink('https://imed458.github.io/phone.github.io/')">Open</button>
      </div><!-- Card 2: Calculators -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect> <line x1="8" y1="6" x2="16" y2="6"></line> <line x1="8" y1="10" x2="16" y2="10"></line> <line x1="8" y1="14" x2="16" y2="14"></line> <line x1="8" y1="18" x2="12" y2="18"></line>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect> <line x1="8" y1="6" x2="16" y2="6"></line> <line x1="8" y1="10" x2="16" y2="10"></line> <line x1="8" y1="14" x2="16" y2="14"></line> <line x1="8" y1="18" x2="12" y2="18"></line>
       </svg>
       <h3 class="card-title" id="card2-title">კალკულატორები</h3>
       <p class="card-subtitle" id="card2-subtitle">Medical calculators</p><button class="card-button" onclick="openLink('https://imed458.github.io/imedcalc.github.io/')">Open</button>
      </div><!-- Card 3: Appointments -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4" /> <path d="M9 11V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /> <circle cx="12" cy="16" r="1"></circle>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4" /> <path d="M9 11V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /> <circle cx="12" cy="16" r="1"></circle>
       </svg>
       <h3 class="card-title" id="card3-title">დანიშნულება</h3>
       <p class="card-subtitle" id="card3-subtitle">Appointment site</p><button class="card-button" onclick="openLink('https://imed458.github.io/danishnuleba1.github.io/')">Open</button>
      </div><!-- Card 4: Calendar -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line>
       </svg>
       <h3 class="card-title" id="card4-title">მორიგეობის კალენდარი</h3>
       <p class="card-subtitle" id="card4-subtitle">Duty schedule calendar</p><button class="card-button" onclick="openLink('https://imed458.github.io/calendar.github.io/')">Open</button>
      </div><!-- Card 5: Inpatient -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"></path><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4H9.5a2 2 0 0 0 0 4h11a2 2 0 0 1 2 2v9"></path></svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"></path><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4H9.5a2 2 0 0 0 0 4h11a2 2 0 0 1 2 2v9"></path></svg>
       <h3 class="card-title" id="card5-title">საწოლების მართვის სისტემა</h3>
       <p class="card-subtitle" id="card5-subtitle">Bed and Patient Management in Inpatient Ward</p>
       <button class="card-button" onclick="openLink('https://imed458.github.io/inpatienter.github.io/')">Open</button>
      </div><!-- New Card 6: Stationary Prescription -->
      <div class="card">
-      <svg class="card-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9v-7.14a2 2 0 0 0-5-1.73M10 20H3v-7.14a2 2 0 0 1 5 1.73M15 4h6v6M9 4H3v6"></path></svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9v-7.14a2 2 0 0 0-5-1.73M10 20H3v-7.14a2 2 0 0 1 5 1.73M15 4h6v6M9 4H3v6"></path></svg>
       <h3 class="card-title" id="card6-title">სტაციონარული დანიშნულება</h3>
       <p class="card-subtitle" id="card6-subtitle">Stationary Prescription Tool</p>
       <button class="card-button" onclick="openLink('https://imed458.github.io/priscription.github.io/')">Open</button>
