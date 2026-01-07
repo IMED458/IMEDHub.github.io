@@ -3,13 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMED Hub - Clinic Tools Portal</title>
-
   <!-- FAVICON: use existing logo file in the same folder -->
   <link rel="icon" type="image/png" href="imed-hub-logo.png">
   <link rel="shortcut icon" type="image/png" href="imed-hub-logo.png">
-  <!-- სურვილის მიხედვით შეგიძლია დაამატო ეს тоже:
-  <link rel="apple-touch-icon" href="imed-hub-logo.png">
-  -->
 
   <script src="/_sdk/element_sdk.js"></script>
   <style>
@@ -139,6 +135,7 @@
         .card:nth-child(4) { animation-delay: 0.4s; }
         .card:nth-child(5) { animation-delay: 0.5s; }
         .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(7) { animation-delay: 0.7s; }
         .card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
@@ -260,7 +257,8 @@
   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
  </head>
  <body>
-  <div class="container"><!-- Hero Section -->
+  <div class="container">
+   <!-- Hero Section -->
    <header class="hero">
     <div class="logo-container">
      <div class="logo-placeholder">
@@ -270,55 +268,83 @@
     </div>
     <p class="subtitle-ka" id="subtitle-ka">კლინიკური ხელსაწყოების პორტალი</p>
     <p class="subtitle-en" id="subtitle-en">Quick access to clinic tools & microsites</p>
-   </header><!-- Links Section -->
+   </header>
+
+   <!-- Links Section -->
    <main class="links-section" id="links">
     <h2 class="section-title">Clinic Tools &amp; Sites</h2>
-    <div class="cards-grid"><!-- Card 1: Phone Numbers -->
+    <div class="cards-grid">
+     <!-- Card 1: Phone Numbers -->
      <div class="card">
-      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-      </svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
       <h3 class="card-title" id="card1-title">კლინიკის ექიმების ნომრები</h3>
       <p class="card-subtitle" id="card1-subtitle">Clinic phone list</p>
-      <div class="card-note">
-       🔒 pass: med123
-      </div><button class="card-button" onclick="openLink('https://imed458.github.io/phone.github.io/')">Open</button>
-     </div><!-- Card 2: Calculators -->
+      <div class="card-note"></div>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/phone.github.io/')">Open</button>
+     </div>
+
+     <!-- Card 2: Calculators -->
      <div class="card">
-      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect> <line x1="8" y1="6" x2="16" y2="6"></line> <line x1="8" y1="10" x2="16" y2="10"></line> <line x1="8" y1="14" x2="16" y2="14"></line> <line x1="8" y1="18" x2="12" y2="18"></line>
-      </svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect> <line x1="8" y1="6" x2="16" y2="6"></line> <line x1="8" y1="10" x2="16" y2="10"></line> <line x1="8" y1="14" x2="16" y2="14"></line> <line x1="8" y1="18" x2="12" y2="18"></line></svg>
       <h3 class="card-title" id="card2-title">კალკულატორები</h3>
-      <p class="card-subtitle" id="card2-subtitle">Medical calculators</p><button class="card-button" onclick="openLink('https://imed458.github.io/imedcalc.github.io/')">Open</button>
-     </div><!-- Card 3: Appointments -->
+      <p class="card-subtitle" id="card2-subtitle">Medical calculators</p>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/imedcalc.github.io/')">Open</button>
+     </div>
+
+     <!-- Card 3: Appointments -->
      <div class="card">
-      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4" /> <path d="M9 11V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /> <circle cx="12" cy="16" r="1"></circle>
-      </svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4" /> <path d="M9 11V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /> <circle cx="12" cy="16" r="1"></circle></svg>
       <h3 class="card-title" id="card3-title">დანიშნულება</h3>
-      <p class="card-subtitle" id="card3-subtitle">Appointment site</p><button class="card-button" onclick="openLink('https://imed458.github.io/danishnuleba1.github.io/')">Open</button>
-     </div><!-- Card 4: Calendar -->
+      <p class="card-subtitle" id="card3-subtitle">Appointment site</p>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/danishnuleba1.github.io/')">Open</button>
+     </div>
+
+     <!-- Card 4: Calendar -->
      <div class="card">
-      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line>
-      </svg>
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line></svg>
       <h3 class="card-title" id="card4-title">მორიგეობის კალენდარი</h3>
-      <p class="card-subtitle" id="card4-subtitle">Duty schedule calendar</p><button class="card-button" onclick="openLink('https://imed458.github.io/calendar.github.io/')">Open</button>
-     </div><!-- Card 5: Inpatient -->
+      <p class="card-subtitle" id="card4-subtitle">Duty schedule calendar</p>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/calendar.github.io/')">Open</button>
+     </div>
+
+     <!-- Card 5: Inpatient -->
      <div class="card">
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"></path><polyline points="9 10 4 15 9 20"></polyline><path d="M20 4H9.5a2 2 0 0 0 0 4h11a2 2 0 0 1 2 2v9"></path></svg>
       <h3 class="card-title" id="card5-title">საწოლების მართვის სისტემა</h3>
       <p class="card-subtitle" id="card5-subtitle">Bed and Patient Management in Inpatient Ward</p>
       <button class="card-button" onclick="openLink('https://imed458.github.io/inpatienter.github.io/')">Open</button>
-     </div><!-- New Card 6: Stationary Prescription -->
+     </div>
+
+     <!-- Card 6: Stationary Prescription -->
      <div class="card">
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9v-7.14a2 2 0 0 0-5-1.73M10 20H3v-7.14a2 2 0 0 1 5 1.73M15 4h6v6M9 4H3v6"></path></svg>
       <h3 class="card-title" id="card6-title">სტაციონარული დანიშნულება</h3>
       <p class="card-subtitle" id="card6-subtitle">Stationary Prescription Tool</p>
       <button class="card-button" onclick="openLink('https://imed458.github.io/priscription.github.io/')">Open</button>
      </div>
+
+     <!-- Card 7: Inpatients Turnover (ახალი) -->
+     <div class="card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+       <circle cx="9" cy="7" r="4"></circle>
+       <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+       <path d="M4 12h16"></path>
+      </svg>
+      <h3 class="card-title" id="card7-title">პაციენტთა ბრუნვა</h3>
+      <p class="card-subtitle" id="card7-subtitle">Inpatients Turnover Management</p>
+      <button class="card-button" onclick="openLink('https://imed458.github.io/Inpatients-turnover.github.io/')">Open</button>
+     </div>
     </div>
-   </main><!-- Footer -->
+   </main>
+
+   <!-- Footer -->
    <footer class="footer">
     <p id="footer-text">© 2025 IMED Hub🩺. Created for clinic efficiency.</p>
    </footer>
   </div>
+
   <script>
         // Configuration object
         const defaultConfig = {
@@ -337,6 +363,8 @@
             card5_subtitle: "Bed and Patient Management in Inpatient Ward",
             card6_title: "სტაციონარული დანიშნულება",
             card6_subtitle: "Stationary Prescription Tool",
+            card7_title: "პაციენტთა ბრუნვა",
+            card7_subtitle: "Inpatients Turnover Management",
             footer_text: "© 2025 IMED Hub. Created for clinic efficiency.",
             background_color: "#f8fafc",
             primary_color: "#0ea5e9",
@@ -346,20 +374,23 @@
             font_family: "Inter",
             font_size: 16
         };
+
         // Function to open links in new tab
         function openLink(url) {
             window.open(url, '_blank', 'noopener,noreferrer');
         }
+
         // Element SDK implementation
         async function onConfigChange(config) {
             const customFont = config.font_family || defaultConfig.font_family;
             const baseSize = config.font_size || defaultConfig.font_size;
             const baseFontStack = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+
             // Update text content
             document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
             document.getElementById('subtitle-ka').textContent = config.subtitle_ka || defaultConfig.subtitle_ka;
             document.getElementById('subtitle-en').textContent = config.subtitle_en || defaultConfig.subtitle_en;
-         
+        
             document.getElementById('card1-title').textContent = config.card1_title || defaultConfig.card1_title;
             document.getElementById('card1-subtitle').textContent = config.card1_subtitle || defaultConfig.card1_subtitle;
             document.getElementById('card2-title').textContent = config.card2_title || defaultConfig.card2_title;
@@ -372,126 +403,82 @@
             document.getElementById('card5-subtitle').textContent = config.card5_subtitle || defaultConfig.card5_subtitle;
             document.getElementById('card6-title').textContent = config.card6_title || defaultConfig.card6_title;
             document.getElementById('card6-subtitle').textContent = config.card6_subtitle || defaultConfig.card6_subtitle;
-         
+            document.getElementById('card7-title').textContent = config.card7_title || defaultConfig.card7_title;
+            document.getElementById('card7-subtitle').textContent = config.card7_subtitle || defaultConfig.card7_subtitle;
+        
             document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+
             // Update colors
             const backgroundColor = config.background_color || defaultConfig.background_color;
             const primaryColor = config.primary_color || defaultConfig.primary_color;
             const textColor = config.text_color || defaultConfig.text_color;
             const cardBackground = config.card_background || defaultConfig.card_background;
             const accentColor = config.accent_color || defaultConfig.accent_color;
+
             document.body.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, #e2e8f0 100%)`;
             document.body.style.color = textColor;
-            // Update primary color elements
+
             const heroTitle = document.querySelector('.hero h1');
             heroTitle.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${accentColor} 100%)`;
             heroTitle.style.webkitBackgroundClip = 'text';
             heroTitle.style.webkitTextFillColor = 'transparent';
             heroTitle.style.backgroundClip = 'text';
-            // Update buttons and logo
+
             const buttons = document.querySelectorAll('.card-button');
             buttons.forEach(button => {
                 button.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${accentColor} 100%)`;
             });
-            // Update logo placeholder (transparent for custom image)
+
             const logoPlaceholder = document.querySelector('.logo-placeholder');
             if (logoPlaceholder) {
                 logoPlaceholder.style.background = 'transparent';
             }
-            // Update card backgrounds
+
             const cards = document.querySelectorAll('.card');
             cards.forEach(card => {
                 card.style.background = cardBackground;
             });
-            // Update fonts
+
             document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
-         
-            // Update font sizes proportionally
+
+            // Font sizes
             document.querySelector('.hero h1').style.fontSize = `${baseSize * 2.2}px`;
             document.querySelector('.hero .subtitle-ka').style.fontSize = `${baseSize * 1.25}px`;
             document.querySelector('.hero .subtitle-en').style.fontSize = `${baseSize * 1.125}px`;
             document.querySelector('.section-title').style.fontSize = `${baseSize * 2}px`;
-         
+
             const cardTitles = document.querySelectorAll('.card-title');
             cardTitles.forEach(title => {
                 title.style.fontSize = `${baseSize * 1.25}px`;
             });
-         
+
             const cardSubtitles = document.querySelectorAll('.card-subtitle');
             cardSubtitles.forEach(subtitle => {
                 subtitle.style.fontSize = `${baseSize * 0.95}px`;
             });
         }
+
         function mapToCapabilities(config) {
             return {
                 recolorables: [
-                    {
-                        get: () => config.background_color || defaultConfig.background_color,
-                        set: (value) => {
-                            config.background_color = value;
-                            if (window.elementSdk) {
-                                window.elementSdk.setConfig({ background_color: value });
-                            }
-                        }
-                    },
-                    {
-                        get: () => config.card_background || defaultConfig.card_background,
-                        set: (value) => {
-                            config.card_background = value;
-                            if (window.elementSdk) {
-                                window.elementSdk.setConfig({ card_background: value });
-                            }
-                        }
-                    },
-                    {
-                        get: () => config.text_color || defaultConfig.text_color,
-                        set: (value) => {
-                            config.text_color = value;
-                            if (window.elementSdk) {
-                                window.elementSdk.setConfig({ text_color: value });
-                            }
-                        }
-                    },
-                    {
-                        get: () => config.primary_color || defaultConfig.primary_color,
-                        set: (value) => {
-                            config.primary_color = value;
-                            if (window.elementSdk) {
-                                window.elementSdk.setConfig({ primary_color: value });
-                            }
-                        }
-                    },
-                    {
-                        get: () => config.accent_color || defaultConfig.accent_color,
-                        set: (value) => {
-                            config.accent_color = value;
-                            if (window.elementSdk) {
-                                window.elementSdk.setConfig({ accent_color: value });
-                            }
-                        }
-                    }
+                    { get: () => config.background_color || defaultConfig.background_color, set: (value) => { config.background_color = value; if (window.elementSdk) window.elementSdk.setConfig({ background_color: value }); } },
+                    { get: () => config.card_background || defaultConfig.card_background, set: (value) => { config.card_background = value; if (window.elementSdk) window.elementSdk.setConfig({ card_background: value }); } },
+                    { get: () => config.text_color || defaultConfig.text_color, set: (value) => { config.text_color = value; if (window.elementSdk) window.elementSdk.setConfig({ text_color: value }); } },
+                    { get: () => config.primary_color || defaultConfig.primary_color, set: (value) => { config.primary_color = value; if (window.elementSdk) window.elementSdk.setConfig({ primary_color: value }); } },
+                    { get: () => config.accent_color || defaultConfig.accent_color, set: (value) => { config.accent_color = value; if (window.elementSdk) window.elementSdk.setConfig({ accent_color: value }); } }
                 ],
                 borderables: [],
                 fontEditable: {
                     get: () => config.font_family || defaultConfig.font_family,
-                    set: (value) => {
-                        config.font_family = value;
-                        if (window.elementSdk) {
-                            window.elementSdk.setConfig({ font_family: value });
-                        }
-                    }
+                    set: (value) => { config.font_family = value; if (window.elementSdk) window.elementSdk.setConfig({ font_family: value }); }
                 },
                 fontSizeable: {
                     get: () => config.font_size || defaultConfig.font_size,
-                    set: (value) => {
-                        config.font_size = value;
-                        if (window.elementSdk) {
-                            window.elementSdk.setConfig({ font_size: value });
-                        }
-                    }
+                    set: (value) => { config.font_size = value; if (window.elementSdk) window.elementSdk.setConfig({ font_size: value }); }
                 }
             };
         }
+
         function mapToEditPanelValues(config) {
             return new Map([
                 ["main_title", config.main_title || defaultConfig.main_title],
@@ -509,9 +496,12 @@
                 ["card5_subtitle", config.card5_subtitle || defaultConfig.card5_subtitle],
                 ["card6_title", config.card6_title || defaultConfig.card6_title],
                 ["card6_subtitle", config.card6_subtitle || defaultConfig.card6_subtitle],
+                ["card7_title", config.card7_title || defaultConfig.card7_title],
+                ["card7_subtitle", config.card7_subtitle || defaultConfig.card7_subtitle],
                 ["footer_text", config.footer_text || defaultConfig.footer_text]
             ]);
         }
+
         // Initialize Element SDK
         if (window.elementSdk) {
             window.elementSdk.init({
@@ -522,5 +512,5 @@
             });
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99f5febce36d95a5',t:'MTc2MzI4NTY5My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ </body>
 </html>
